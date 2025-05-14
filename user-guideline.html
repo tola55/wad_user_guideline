@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Email Client Setup Guide</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+</head>
+<body>
+  <div class="container mt-5">
+    <h1 class="text-center mb-4">Email Setup Instructions</h1>
+
+    <ul class="nav nav-tabs mb-4" id="setupTab" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="thunderbird-tab" data-bs-toggle="tab" data-bs-target="#thunderbird" type="button" role="tab">Mozilla Thunderbird</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="outlook-tab" data-bs-toggle="tab" data-bs-target="#outlook" type="button" role="tab">Microsoft Outlook</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="gmail-tab" data-bs-toggle="tab" data-bs-target="#gmail" type="button" role="tab">Google Mail Send As</button>
+      </li>
+    </ul>
+
+    <div class="tab-content" id="setupTabContent">
+      <!-- Thunderbird Instructions -->
+      <div class="tab-pane fade show active" id="thunderbird" role="tabpanel">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Mozilla Thunderbird Setup</h5>
+            <ol>
+              <li>Open Mozilla Thunderbird.</li>
+              <li>Click on <strong>Email</strong> under "Set up an account".</li>
+              <li>Enter the following details:
+                <ul>
+                  <li><strong>Your name:</strong> Your Name</li>
+                  <li><strong>Email address:</strong> demo@your-name.com</li>
+                  <li><strong>Password:</strong> Your email password</li>
+                </ul>
+              </li>
+              <li>Click <strong>Continue</strong>.</li>
+              <li>Thunderbird will try to configure settings. Choose <strong>Manual Config</strong> if necessary:</li>
+              <ul>
+                <li><strong>Incoming:</strong> IMAP, mail.your-name.com, Port 993, SSL/TLS</li>
+                <li><strong>Outgoing:</strong> SMTP, mail.your-name.com, Port 587, STARTTLS</li>
+              </ul>
+              <li>Click <strong>Done</strong>.</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+
+      <!-- Outlook Instructions -->
+      <div class="tab-pane fade" id="outlook" role="tabpanel">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Microsoft Outlook Setup</h5>
+            <ol>
+              <li>Open Outlook and go to <strong>File > Add Account</strong>.</li>
+              <li>Enter <strong>demo@your-name.com</strong> and click <strong>Connect</strong>.</li>
+              <li>If prompted, choose <strong>IMAP</strong>.</li>
+              <li>Enter server settings:
+                <ul>
+                  <li><strong>Incoming mail server:</strong> mail.your-name.com, Port 993, SSL/TLS</li>
+                  <li><strong>Outgoing mail server:</strong> mail.your-name.com, Port 587, STARTTLS</li>
+                </ul>
+              </li>
+              <li>Enter your password and click <strong>Connect</strong>.</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+
+      <!-- Gmail Instructions -->
+      <div class="tab-pane fade" id="gmail" role="tabpanel">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Gmail "Send As" Setup</h5>
+            <ol>
+              <li>Open Gmail and go to <strong>Settings > See all settings</strong>.</li>
+              <li>Go to the <strong>Accounts and Import</strong> tab.</li>
+              <li>In the <strong>Send mail as</strong> section, click <strong>Add another email address</strong>.</li>
+              <li>Enter:
+                <ul>
+                  <li><strong>Name:</strong> Your Name</li>
+                  <li><strong>Email:</strong> demo@your-name.com</li>
+                </ul>
+              </li>
+              <li>Choose <strong>Send through your SMTP server</strong>:
+                <ul>
+                  <li><strong>SMTP Server:</strong> mail.your-name.com</li>
+                  <li><strong>Port:</strong> 587</li>
+                  <li><strong>Username:</strong> demo@your-name.com</li>
+                  <li><strong>Password:</strong> Your email password</li>
+                  <li><strong>Secured connection:</strong> TLS</li>
+                </ul>
+              </li>
+              <li>Click <strong>Add Account</strong> and confirm with the verification code sent to your inbox.</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
