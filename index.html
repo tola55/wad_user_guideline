@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Email Client Setup Guide</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+</head>
+<body>
+  <div class="container mt-5">
+    
+    <h1 class="text-center mb-4">Email Setup for Microsoft Thunderbird Email, Microsoft Outlook and Google Mail Send As</h1>
+
+    <ul class="nav nav-tabs mb-4" id="setupTab" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="thunderbird-tab" data-bs-toggle="tab" data-bs-target="#thunderbird" type="button" role="tab">Mozilla Thunderbird</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="outlook-tab" data-bs-toggle="tab" data-bs-target="#outlook" type="button" role="tab">Microsoft Outlook</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="gmail-tab" data-bs-toggle="tab" data-bs-target="#gmail" type="button" role="tab">Google Mail Send As</button>
+      </li>
+    </ul>
+
+    <div class="tab-content" id="setupTabContent">
+      <!-- Thunderbird Instructions -->
+      <div class="tab-pane fade show active" id="thunderbird" role="tabpanel">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Mozilla Thunderbird Setup</h5>
+            <ol>
+              <li>Go to Microsoft Store</li>
+              <li>Search for <strong>Mozilla Thunderbird Email</strong></li>
+              <img src="img/thunderbird/mte-selectapp.png" alt="" class="img-fluid mb-3">
+
+              <li>Click <strong>Get</strong> to install the app.</li>
+              <img src="img/thunderbird/mte-searching.png" alt="" class="img-fluid mb-3">
+
+              <li>Create account by </li>
+              <li>Enter the following details:
+                <ul>
+                  <li><strong>Your name:</strong> Tola Muth</li>
+                  <li><strong>Email address:</strong> muthtola55@gmail.com</li>
+                  <li><strong>Password:</strong> Your email password</li>
+                </ul>
+              </li>
+              <img src="img/thunderbird/mte-createAcc.png" alt="" class="img-fluid mb-3">
+
+              <li>Continue by click done</li>
+              <img src="img/thunderbird/mte-clickdone.png" alt="" class="img-fluid mb-3">
+              
+              <li>Sign to Mozilla Thunderbird Email with your account: </li>
+              <img src="img/thunderbird/mte-signWithGgl.png" alt="" class="img-fluid mb-3">
+              
+              <li>Click <strong>Allow</strong> to grant permissions.</li>
+              <img src="img/thunderbird/mte-permission.png" alt="" class="img-fluid mb-3">
+              
+              <li>Now, you are successful in creating a new account.</li>
+              <img src="img/thunderbird/mte-successful.png" alt="" class="img-fluid mb-3">
+              
+              
+            </ol>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Outlook Instructions -->
+      <div class="tab-pane fade" id="outlook" role="tabpanel">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Microsoft Outlook Setup</h5>
+            <ol>
+              <li>Open Microsoft Store and search for <strong>Microsoft Outlook</strong>.</li>
+              <li>Click <strong>Get</strong> to install the app.</li>
+              <li>Most users already had Microsoft Outlook install in their machine.</li>
+              <img src="img/outlook/mol-install.png" alt="" class="img-fluid mb-3">
+
+              <li>Open Microsoft Outlook</li>
+              <li>Click <strong>Connect</strong> to signin your account</li>
+              <img src="img/outlook/mol-accConnect.png" alt="" class="img-fluid mb-3">
+              
+              <li>Enter password for your gmail account to confirm.</li>
+              <img src="img/outlook/mol-passw.png" alt="" class="img-fluid mb-3">
+              
+              <li>Microsoft Outlook wants to access your gmail account.</li>
+              <li>You will see two options <strong>Deny</strong> and <strong>Allow</strong></li>
+              <img src="img/outlook/mol-accessAcc.png" alt="" class="img-fluid mb-3">
+              
+              <li>Click <strong>Allow to continue</strong></li>
+              <img src="img/outlook/mol-allow.png" alt="" class="img-fluid mb-3">
+              
+              <li>Now, you are successful in creating new Microsoft Outlook account.</li>
+              <li>You will probably see this: </li>
+              <img src="img/outlook/mol-successful.png" alt="" class="img-fluid mb-3">
+
+              
+            </ol>
+          </div>
+        </div>
+      </div>
+
+      <!-- Gmail Instructions -->
+      <div class="tab-pane fade" id="gmail" role="tabpanel">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Gmail "Send As" Setup</h5>
+            <ol>
+              <li>Open Gmail and go to <strong>Settings > See all settings</strong>.</li>
+              <img src="img/mail/mail-setting.png" alt="" class="img-fluid mb-3">
+              
+              <li>Go to the <strong>Accounts and Import</strong> tab.</li>
+              <img src="img/mail/mail-accImp.png" alt="" class="img-fluid mb-3">
+              
+              <li>Add Email Address:</li>
+              <li>When you input the destination address, avoid using the same email address.</li>
+              <li>I prefered other account <strong>muthtola4@gmail.com</strong></li>
+              <img src="img/mail/mail-inputAddress.png" alt="" class="img-fluid mb-3">
+              
+              <li>Comfirm verification and add email address.</li>
+              <li>Check <strong>muthtola4@gmail.com</strong> to see the mail.</li>
+              <li>Click link to comfirm.</li>
+              <img src="img/mail/mail-sendToAccVer.png" alt="" class="img-fluid mb-3">
+              
+              <li>I can open mail on my phone and click the link to comfirm: </li>
+              <img src="img/mail/mail-sended.png" alt="" class="img-fluid mb-3">
+
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
